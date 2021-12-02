@@ -5,18 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords" content="" />
-  <meta name="author" content="John Doe" />
+  <meta name="author" content="ravenblu" />
   <meta name="description" content="" />
   
   
   <title>
     
-      Hello World 
+      Real-time Shadows 
       
       
       |
     
-     Hexo
+     Recharge
   </title>
 
   
@@ -70,30 +70,10 @@
         <img src="/images/avatar.png" alt="">
       
     </a>
-    <div class="nickname"><a href="/">Oranges</a></div>
+    <div class="nickname"><a href="/">game dev && life</a></div>
   </div>
   <div class="navbar">
     <ul>
-      
-        <li class="nav-item" data-path="/">
-          <a href="/">Home</a>
-        </li>
-      
-        <li class="nav-item" data-path="/archives/">
-          <a href="/archives/">Archives</a>
-        </li>
-      
-        <li class="nav-item" data-path="/tags/">
-          <a href="/tags/">Tags</a>
-        </li>
-      
-        <li class="nav-item" data-path="/friends/">
-          <a href="/friends/">Friends</a>
-        </li>
-      
-        <li class="nav-item" data-path="/about/">
-          <a href="/about/">About</a>
-        </li>
       
     </ul>
   </div>
@@ -133,28 +113,45 @@ MathJax = {
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">Hello World</div>
+      <div class="post-title">Real-time Shadows</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime" title="Update time"></i>
-          2021-10-23 14:51:47
+          2021-10-23 15:42:26
         </span>
         
       </div>
       <div class="markdown-body">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h2 id="Shadow-Mapping-Basics"><a href="#Shadow-Mapping-Basics" class="headerlink" title="Shadow Mapping Basics"></a>Shadow Mapping Basics</h2><h3 id="Two-pass-Approach"><a href="#Two-pass-Approach" class="headerlink" title="Two-pass Approach"></a>Two-pass Approach</h3><ol>
+<li>Generate the depth/shadow map (to a texture) from the light’s perspective</li>
+<li>Use the depth information to calculate shadows from the camera’s point of view</li>
+</ol>
+<h3 id="Two-Issues"><a href="#Two-Issues" class="headerlink" title="Two Issues"></a>Two Issues</h3><ol>
+<li>Shadow discrepancy (shadow acne)<br>Because the shadow map is limited by resolution, multiple fragments can sample the same value from the depth map when they’re relatively far away from the light source, or the angle between the light and the surface is too small.</li>
+</ol>
+<p><strong>Solution</strong>: Add a small amount of shadow bias based on the surface angle towards the light<br>2. Aliasing (jagged edges)<br><strong>Industry solutions</strong>:</p>
+<ul>
+<li>Different LOD on the shadow map</li>
+<li>Dynamic resolutions</li>
+<li>Average the values</li>
+</ul>
+<p><strong>Algorithms</strong>:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://learnopengl.com/Advanced-Lighting/Shadows/Point-Shadows">Omnidirectional Shadow Maps</a></li>
+<li><a target="_blank" rel="noopener" href="https://learnopengl.com/Guest-Articles/2021/CSM">Cascaded Shadow Maps</a></li>
+</ul>
+<h2 id="Real-time-Shadow-Mapping"><a href="#Real-time-Shadow-Mapping" class="headerlink" title="Real-time Shadow Mapping"></a>Real-time Shadow Mapping</h2><p>Percentage Closer Filtering (to create soft shadows)</p>
+<ul>
+<li>anti-aliasing for shadow edges</li>
+<li>filter small: sharper, large: softer<br>Complete PCSS algorithm:</li>
+</ul>
+<ol>
+<li>Blocker search: get the avg blocker depth in a certain region. Blocker search can be constant or heuristics (better).</li>
+<li>Pernumbra estimation: use the blocker depth to determine filter size</li>
+<li>Percentage closer filtering</li>
+</ol>
+<h2 id="Other-notes"><a href="#Other-notes" class="headerlink" title="Other notes"></a>Other notes</h2><p>Multiple light sources? Process one by one.</p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a target="_blank" rel="noopener" href="https://learnopengl.com/Advanced-Lighting/Shadows/Shadow-Mapping">Shadow Mapping</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YK4y1T7yY?p=3">Shadow Mapping Course - 1 (Chinese)</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YK4y1T7yY?p=4">Shadow Mapping Course - 2 (Chinese)</a></p>
 
       </div>
       
@@ -165,13 +162,13 @@ MathJax = {
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime" title="Update time"></i>
-              2021-10-23 14:51:47
+              2021-10-23 15:42:26
             </span>
             
           </div>
           <div class="post-foot-prev">
             
-              <a href="/2021/10/23/hello/" target="_self">
+              <a href="/log-nov-2021/" target="_self">
                 <span>Next</span>
                 <i class="iconfont icon-chevronright"></i>
               </a>
@@ -187,7 +184,7 @@ MathJax = {
   <div class="post-catalog hidden" id="catalog">
     <div class="title">Contents</div>
     <div class="catalog-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Shadow-Mapping-Basics"><span class="toc-text">Shadow Mapping Basics</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Two-pass-Approach"><span class="toc-text">Two-pass Approach</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Two-Issues"><span class="toc-text">Two Issues</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Real-time-Shadow-Mapping"><span class="toc-text">Real-time Shadow Mapping</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other-notes"><span class="toc-text">Other notes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-text">References</span></a></li></ol>
     </div>
   </div>
 
@@ -215,44 +212,8 @@ MathJax = {
     <ul>
       
         <li>
-          <a title="github" target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/ravenblu">
             <i class="iconfont icon-github"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="email" href="">
-            <i class="iconfont icon-envelope"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="facebook" href="">
-            <i class="iconfont icon-facebooksquare"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="twitter" href="">
-            <i class="iconfont icon-twitter"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="wechat" href="">
-            <i class="iconfont icon-wechat"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="weibo" href="">
-            <i class="iconfont icon-weibo"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="rss" href="/atom.xml">
-            <i class="iconfont icon-rss"></i>
           </a>
         </li>
       
@@ -261,13 +222,13 @@ MathJax = {
   
     <div class="footer-more">
       
-        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © Oranges 2021</a>
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © ravenblu 2021</a>
         
     </div>
   
     <div class="footer-more">
       
-        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Modified by ravenblu | Powered by Hexo</a>
         
     </div>
   
@@ -502,12 +463,12 @@ MathJax = {
       </a>
       <div class="share-content hidden">
         
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Hello%20World + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F10%2F23%2Fhello-world%2F + '" target="_blank" title="Twitter">
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Real-time%20Shadows + '&url=' + https%3A%2F%2Fravenblu.github.io%2Frealtime-shadows%2F + '" target="_blank" title="Twitter">
             <i class="iconfont icon-twitter"></i>
           </a>
         
         
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/10/23/hello-world/" target="_blank" title="Facebook">
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://ravenblu.github.io/realtime-shadows/" target="_blank" title="Facebook">
             <i class="iconfont icon-facebooksquare"></i>
           </a>
         
