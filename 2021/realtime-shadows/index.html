@@ -11,8 +11,8 @@
   
   <title>
     
-      Tag 
-       : life
+      Real-time Shadows 
+      
       
       |
     
@@ -85,39 +85,127 @@
 
 
       <div class="flex-container">
-        <!-- 标签详情页，展示某个标签下的文章列表，url形式：https://yoursite/tags/某个标签/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<div class="container tag-details">
-  <div class="content-title">
-    <h2>
-      <span>life</span>
-    </h2>
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Real-time Shadows</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2021-10-23 15:42:26
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <h2 id="Shadow-Mapping-Basics"><a href="#Shadow-Mapping-Basics" class="headerlink" title="Shadow Mapping Basics"></a>Shadow Mapping Basics</h2><h3 id="Two-pass-Approach"><a href="#Two-pass-Approach" class="headerlink" title="Two-pass Approach"></a>Two-pass Approach</h3><ol>
+<li>Generate the depth/shadow map (to a texture) from the light’s perspective</li>
+<li>Use the depth information to calculate shadows from the camera’s point of view</li>
+</ol>
+<h3 id="Two-Issues"><a href="#Two-Issues" class="headerlink" title="Two Issues"></a>Two Issues</h3><ol>
+<li>Shadow discrepancy (shadow acne)<br>Because the shadow map is limited by resolution, multiple fragments can sample the same value from the depth map when they’re relatively far away from the light source, or the angle between the light and the surface is too small.</li>
+</ol>
+<p><strong>Solution</strong>: Add a small amount of shadow bias based on the surface angle towards the light<br>2. Aliasing (jagged edges)<br><strong>Industry solutions</strong>:</p>
+<ul>
+<li>Different LOD on the shadow map</li>
+<li>Dynamic resolutions</li>
+<li>Average the values</li>
+</ul>
+<p><strong>Algorithms</strong>:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://learnopengl.com/Advanced-Lighting/Shadows/Point-Shadows">Omnidirectional Shadow Maps</a></li>
+<li><a target="_blank" rel="noopener" href="https://learnopengl.com/Guest-Articles/2021/CSM">Cascaded Shadow Maps</a></li>
+</ul>
+<h2 id="Real-time-Shadow-Mapping"><a href="#Real-time-Shadow-Mapping" class="headerlink" title="Real-time Shadow Mapping"></a>Real-time Shadow Mapping</h2><p>Percentage Closer Filtering (to create soft shadows)</p>
+<ul>
+<li>anti-aliasing for shadow edges</li>
+<li>filter small: sharper, large: softer<br>Complete PCSS algorithm:</li>
+</ul>
+<ol>
+<li>Blocker search: get the avg blocker depth in a certain region. Blocker search can be constant or heuristics (better).</li>
+<li>Pernumbra estimation: use the blocker depth to determine filter size</li>
+<li>Percentage closer filtering</li>
+</ol>
+<h2 id="Other-notes"><a href="#Other-notes" class="headerlink" title="Other notes"></a>Other notes</h2><p>Multiple light sources? Process one by one.</p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a target="_blank" rel="noopener" href="https://learnopengl.com/Advanced-Lighting/Shadows/Shadow-Mapping">Shadow Mapping</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YK4y1T7yY?p=3">Shadow Mapping Course - 1 (Chinese)</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YK4y1T7yY?p=4">Shadow Mapping Course - 2 (Chinese)</a></p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2021-10-23 15:42:26
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2021/nov/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
   </div>
-  
-    <div class="post-list">
-      <div class="post-item" title="2021.12月记">
-        <span class="time-m-d">2021-12-31</span>
-        <a href="/2021/dec/">
-          <span>2021.12月记</span>
-        </a>
-      </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Shadow-Mapping-Basics"><span class="toc-text">Shadow Mapping Basics</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Two-pass-Approach"><span class="toc-text">Two-pass Approach</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Two-Issues"><span class="toc-text">Two Issues</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Real-time-Shadow-Mapping"><span class="toc-text">Real-time Shadow Mapping</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other-notes"><span class="toc-text">Other notes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-text">References</span></a></li></ol>
     </div>
+  </div>
+
   
-    <div class="post-list">
-      <div class="post-item" title="2021.11月记">
-        <span class="time-m-d">2021-11-30</span>
-        <a href="/2021/nov/">
-          <span>2021.11月记</span>
-        </a>
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
       </div>
-    </div>
-  
-  <nav class="post-navigation">
     
-    <span class="page-num">1 / 1</span>
-    
-  </nav>
-</div>
+  </div>
+
 
         <div class="footer">
   <div class="social">
@@ -368,6 +456,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Real-time%20Shadows + '&url=' + https%3A%2F%2Fravenblu.github.io%2F2021%2Frealtime-shadows%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://ravenblu.github.io/2021/realtime-shadows/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
