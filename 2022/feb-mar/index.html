@@ -11,7 +11,7 @@
   
   <title>
     
-      archive_a: 2021/11 
+      2022.2 &amp; 2022.3摘要 
       
       
       |
@@ -85,75 +85,139 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2022</span>
-          </h2>
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">2022.2 & 2022.3摘要</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2022-03-31 00:00:00
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <h3 id="Books"><a href="#Books" class="headerlink" title="Books"></a>Books</h3><p><strong>《普京：权力的逻辑》</strong><br>通过重组东正教教会，普京带领俄罗斯重新找到民族自我认同。<br>俄罗斯一蹶不振的经济算是资本主义寡头们卖了国的结果。<br>普京的意识可能还在前苏联。</p>
+<p><strong>《历史》（希罗多德）</strong><br>这本书讲述的是希腊-波斯之间的战争史，角度取的是非波斯人的角度，讲述波斯帝国历史。虽然是公元前的书，但故事性很好，读起来很有兴味。<br>里面有一句话：人间的幸福是绝不会长久停留在一个地方 – 和道家关于兴衰变化的价值观有异曲同工之妙。</p>
+<h3 id="Projects"><a href="#Projects" class="headerlink" title="Projects"></a>Projects</h3><ul>
+<li><p>X</p>
+<ul>
+<li>Migrating from Unity to Unreal</li>
+</ul>
+</li>
+<li><p>Multiplayer</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/oculus-samples/Unreal-SharedSpaces">Shared Space</a></li>
+</ul>
+</li>
+<li><p>Hands gameplay</p>
+</li>
+<li><p>Passthrough</p>
+</li>
+<li><p>Tensorflow</p>
+</li>
+</ul>
+<h3 id="Music"><a href="#Music" class="headerlink" title="Music"></a>Music</h3><ul>
+<li>练琴<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=5EPDB2lqQfo&ab_channel=YUNDIMUSIC%E4%BA%91%E8%BF%AA%E9%9F%B3%E4%B9%90">李云迪大师课-彩云追月</a></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2022-03-31 00:00:00
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
       
-      <div class="post-item" title="2022.1摘要">
-        <div class="time-m-d">01-31</div>
-        <div class="title">
-          <a href="/2022/jan/">
-            <span>2022.1摘要</span>
-          </a>
-        </div>
-      </div>
+    </div>
     
-      <div class="post-item" title="New Year Resolution">
-        <div class="time-m-d">01-01</div>
-        <div class="title">
-          <a href="/2022/new-year-resolution/">
-            <span>New Year Resolution</span>
-          </a>
-        </div>
-      </div>
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Books"><span class="toc-text">Books</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Projects"><span class="toc-text">Projects</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Music"><span class="toc-text">Music</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
     
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2021</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="2021.12摘要">
-        <div class="time-m-d">12-31</div>
-        <div class="title">
-          <a href="/2021/dec/">
-            <span>2021.12摘要</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="2021.11摘要">
-        <div class="time-m-d">11-30</div>
-        <div class="title">
-          <a href="/2021/nov/">
-            <span>2021.11摘要</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="Real-time Shadows">
-        <div class="time-m-d">10-23</div>
-        <div class="title">
-          <a href="/2021/realtime-shadows/">
-            <span>Real-time Shadows</span>
-          </a>
-        </div>
+      <div class="comments-container">
+        
+  <div id="disqus_thread"></div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://recharge-blog.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         <div class="footer">
   <div class="social">
@@ -404,6 +468,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + 2022.2%20%26%202022.3%E6%91%98%E8%A6%81 + '&url=' + https%3A%2F%2Fravenblu.github.io%2F2022%2Ffeb-mar%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://ravenblu.github.io/2022/feb-mar/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
