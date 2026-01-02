@@ -1,0 +1,6 @@
+[submodule "not-much"]
+	path = not-much
+	url = git@github.com:imgios/not-much.git
+[submodule "themes/not-much"]
+	path = themes/not-much
+	url = https://github.com/imgios/not-much.git

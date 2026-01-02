@@ -1,0 +1,46 @@
+baseURL = 'https://ravenblu.github.io/'
+languageCode = 'en-us'
+title = 'Jiayu Liu'
+theme = 'not-much'
+copyright = "All Rights Reserved © {year}"
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Controls the navigation
+[menu]
+    [[menu.main]]
+        identifier = "about"
+        name = "about"
+        title = "About"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "portfolio"
+        name = "portfolio"
+        title = "Portfolio"
+        url = "/portfolio"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "posts"
+        name = "thinking"
+        title = "Thinking"
+        url = "/posts"
+        weight = 3
+
+# Theme
+[params]
+theme = "light"
+palette = "default"
+showThemeNotice = false
+showPostsSummary = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

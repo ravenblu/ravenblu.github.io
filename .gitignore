@@ -1,0 +1,19 @@
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Executables (may be added to repository if desired)
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock
+
+# Node dependencies (if using npm for front-end assets)
+/node_modules/
+
+# Other
+.DS_Store
