@@ -36,7 +36,7 @@ copyright = "All Rights Reserved © {year}"
 
 # Theme
 [params]
-theme = "light"
+theme = "auto"
 palette = "default"
 showThemeNotice = false
 showPostsSummary = true
