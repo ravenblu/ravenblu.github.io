@@ -7,9 +7,11 @@
 <figcaption>A full-scale multiplayer concert experience, live on Meta Quest 3</figcaption>
 </figure>
 
-As the primary developer of the content creation systems/SDK at <a href="https://wavexr.com/" target="_blank">Wave</a>, I worked closely with a cross-functional agile team, providing technical mentorship for artists and taking initiatives on performance optimizations, ensuring high-quality delivery in a mission-critical production environment.
+At <a href="https://wavexr.com/" target="_blank">Wave</a>, we've successfully built interactive, live VR music experience with performances by Justin Bieber, John Legend, Pentakill, Clavin Harris, Black Gryph0n and many others.
 
-I was involved end-to-end in the platform development, besides the above - I also worked on networked multiplayer features, multiple foundational layers for high-performant gameplay systems, testing frameworks such as simulation bots and automation.
+As the primary developer of the content creation systems/SDK, I worked closely with a cross-functional agile team, providing technical mentorship and taking initiatives on performance optimizations, ensuring high-quality delivery in a mission-critical production environment.
+
+I was involved end-to-end in the platform development, besides the above - I worked on networked multiplayer features, editor extensions, testing frameworks such as simulation bots and automation, and various workflow automation Python scripts used in show production.
 
 *Tech: C++, UE5 (engine source), Meta Quest 3, Android, Linux, Windows, Unreal Insights, RenderDoc, Grafana, Live Link, TouchOSC, Virtual Reality*
 
