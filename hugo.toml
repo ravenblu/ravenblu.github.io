@@ -1,4 +1,4 @@
-baseURL = 'https://ravenblu.github.io/'
+baseURL = 'https://liujiayu.com/'
 languageCode = 'en-us'
 title = 'Jiayu Liu'
 theme = 'not-much'
@@ -27,9 +27,16 @@ copyright = "All Rights Reserved © {year}"
         url = "/portfolio"
         weight = 2
 
+    [[menu.main]]
+        identifier = "endorsements"
+        name = "endorsements"
+        title = "Endorsements"
+        url = "/endorsements"
+        weight = 3
+
 # Theme
 [params]
-theme = "auto"
+theme = "dark"
 palette = "default"
 showThemeNotice = false
 showPostsSummary = true
