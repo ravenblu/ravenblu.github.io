@@ -7,9 +7,9 @@
 <figcaption>A full-scale multiplayer concert experience, live on Meta Quest 3</figcaption>
 </figure>
 
-As the primary developer of the content creation systems/SDK, I worked closely with the creative team of producers, designers and artists, providing technical mentorship and driving performance optimizations, ensuring high-quality delivery in a mission-critical production environment.
+As the primary developer of the content creation systems/SDK at <a href="https://wavexr.com/" target="_blank">Wave</a>, I worked closely with a cross-functional agile team, providing technical mentorship for artists and taking initiatives on performance optimizations, ensuring high-quality delivery in a mission-critical production environment.
 
-I was involved end-to-end in the platform development. Very proud of the team for the highest level of dedication and always pushing the envelope.
+I was involved end-to-end in the platform development, besides the above - I also worked on networked multiplayer features, multiple foundational layers for high-performant gameplay systems, testing frameworks such as simulation bots and automation.
 
 *Tech: C++, UE5 (engine source), Meta Quest 3, Android, Linux, Windows, Unreal Insights, RenderDoc, Grafana, Live Link, TouchOSC, Virtual Reality*
 
@@ -36,6 +36,20 @@ I partnered with creative teams to transform evolving show requirements into rob
 The concert was created on an older gameplay system in Unity, using the Timeline system to drive interactions. This was the first show after I joined Wave, where I was mainly involved in troubleshooting gameplay logic and client-server communication that triggers interactive mechanics.
 
 *Tech: C#, Unity, Unity Profiler, Windows, HTML*
+
+───────────
+
+<h5>Word Collect</h5>
+<figure>
+{{< youtube X1clyq0DjpQ >}}
+<figcaption>Top puzzle game enjoyed by millions of players, available on iOS and Android</figcaption>
+</figure>
+
+Work Collect was one of the main projects I worked on at <a href="https://superfree.com/" target="_blank">Super Free</a>.
+
+My contributions include gameplay feature implementation in C#/Unity and level editor tooling for designers. Besides, I built one of the new games from scratch, and also implemented the backend service in Ruby On Rails and MySQL for the Leaderboard feature of the highest player retention and revenue in Word Collect.
+
+*Tech: C#, Unity, Unity Profiler, Android, iOS*
 
 ───────────
 
