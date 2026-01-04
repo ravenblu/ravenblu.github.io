@@ -45,7 +45,7 @@ The concert was created on an older gameplay system in Unity, using the Timeline
 <figcaption>Top puzzle game enjoyed by millions of players, available on iOS and Android</figcaption>
 </figure>
 
-Work Collect was one of the main projects I worked on at <a href="https://superfree.com/" target="_blank">Super Free</a>.
+<a href="https://apps.apple.com/us/app/word-collect-word-search/id1299956969" target="_blank">Word Collect</a> was one of the main projects I worked on at <a href="https://superfree.com/" target="_blank">Super Free</a> (Super Lucky before acquisition).
 
 My contributions include gameplay feature implementation in C#/Unity and level editor tooling for designers. Besides, I built one of the new games from scratch, and also implemented the backend service in Ruby On Rails and MySQL for the Leaderboard feature of the highest player retention and revenue in Word Collect.
 
@@ -59,6 +59,6 @@ My contributions include gameplay feature implementation in C#/Unity and level e
 <figcaption>Mixed-reality app that allows users to create a mind map</figcaption>
 </figure>
 
-The technical demo was one of the finalists (top 3) for the AT&T + Magic Leap hackathon in San Francisco. I was the lead engineer on the team building the core systems, empowering the user to jot down ideas, place and connect stickers similarly to creating a mind map.
+The technical demo won Top 3 at the AT&T + Magic Leap hackathon in San Francisco. I was the lead engineer on the team building the core systems, empowering the user to jot down ideas, place and connect stickers similarly to creating a mind map.
 
 *Tech: C#, Unity, Magic Leap, Mixed Reality*
