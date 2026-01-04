@@ -7,7 +7,7 @@
 <figcaption>A full-scale multiplayer concert experience, live on Meta Quest 3</figcaption>
 </figure>
 
-At <a href="https://wavexr.com/" target="_blank">Wave</a>, we've successfully built interactive, live VR music experience with performances by Justin Bieber, John Legend, Pentakill, Clavin Harris, Black Gryph0n and many others.
+At <a href="https://wavexr.com/" target="_blank">Wave</a>, we've successfully built interactive, live VR music experience with performances by <a href="https://www.youtube.com/watch?v=UAhGvhvcoyY&list=RDUAhGvhvcoyY&start_radio=1" target="_blank">Justin Bieber</a>, <a href="https://www.youtube.com/watch?v=eGy64l9Yuuw&list=RDeGy64l9Yuuw&start_radio=1" target="_blank">John Legend</a>, Pentakill, Calvin Harris, Black Gryph0n and many others.
 
 As the primary developer of the content creation systems/SDK, I worked closely with a cross-functional agile team, providing technical mentorship and taking initiatives on performance optimizations, ensuring high-quality delivery in a mission-critical production environment.
 
