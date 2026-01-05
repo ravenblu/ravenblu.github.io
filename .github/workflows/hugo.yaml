@@ -78,6 +78,8 @@ jobs:
           restore-keys:
             hugo-
       - name: Build the site
+        env:
+          HUGO_GOOGLEANALYTICS: ${{ secrets.GA_MEASUREMENT_ID }}
         run: |
           hugo \
             --gc \
