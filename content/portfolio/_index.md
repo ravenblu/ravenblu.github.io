@@ -9,9 +9,9 @@
 
 At <a href="https://wavexr.com/" target="_blank">Wave</a>, we've successfully built interactive, live VR music experience with performances by <a href="https://www.youtube.com/watch?v=UAhGvhvcoyY&list=RDUAhGvhvcoyY&start_radio=1" target="_blank">Justin Bieber</a>, <a href="https://www.youtube.com/watch?v=eGy64l9Yuuw&list=RDeGy64l9Yuuw&start_radio=1" target="_blank">John Legend</a>, Pentakill, Calvin Harris, Black Gryph0n and many others.
 
-As the primary developer of the content creation systems/SDK, I worked closely with a cross-functional agile team, providing technical mentorship and taking initiatives on performance optimizations, ensuring high-quality delivery in a mission-critical production environment.
+As the primary developer of the content creation systems/SDK, I worked closely with a cross-functional agile team, providing technical mentorship to non-tech teams, taking initiatives on UX and performance optimizations, and ensuring high-quality delivery in a mission-critical production environment. Proud to highlight that our work has **leveraged the show production efficiency from 1/over a quarter to 2/week**!
 
-I was involved end-to-end in the platform development, besides the above - I worked on networked multiplayer features, editor extensions, testing frameworks such as simulation bots and automation, and various workflow automation Python scripts used in show production.
+I was involved end-to-end in the platform development, besides the above - I worked on networked multiplayer features, Unreal Engine editor extensions, multiple GUI tools, testing frameworks such as simulation bots and automation, and various workflow automation Python scripts used in show production.
 
 *Tech: C++, UE5 (engine source), Meta Quest 3, Android, Linux, Windows, Unreal Insights, RenderDoc, Grafana, Live Link, TouchOSC, Virtual Reality*
 
