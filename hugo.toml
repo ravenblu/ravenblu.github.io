@@ -37,7 +37,7 @@ copyright = "All Rights Reserved © {year}"
 # Theme
 [params]
 theme = "auto"
-palette = "default"
+palette = "dracula"
 showThemeNotice = false
 showPostsSummary = true
 

@@ -13,7 +13,7 @@ As the primary developer of the content creation systems/SDK, I worked in a cros
 
 My dual role as an SDK developer and Shows Tech Lead allowed me to close the loop from creation to production, treating our foundational systems as a product that must survive the pressure of a live environment.
 
-My work covered the entire foundational stack, besides the above - I worked on networked multiplayer features, livestreaming components, Unreal Engine editor extensions, multiple GUI tools, testing frameworks such as simulation bots and automation, and various workflow Python-based automation tools used in show production.
+I was involved end-to-end in the development of the foundational stack, besides the above - I worked on networked multiplayer features, components for livestreaming, Unreal Engine editor extensions, multiple GUI tools, testing frameworks such as simulation bots and automation, and various workflow Python-based automation tools used in show production.
 
 *Tech: C++, UE5 (engine source), Meta Quest 3, Android, Linux, Windows, Unreal Insights, RenderDoc, Grafana, Live Link, TouchOSC, Virtual Reality*
 
