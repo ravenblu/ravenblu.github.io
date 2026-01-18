@@ -9,7 +9,7 @@
 
 At <a href="https://wavexr.com/" target="_blank">Wave</a>, we've successfully built interactive, live VR music experience with performances by <a href="https://www.youtube.com/watch?v=UAhGvhvcoyY&list=RDUAhGvhvcoyY&start_radio=1" target="_blank">Justin Bieber</a>, <a href="https://www.youtube.com/watch?v=eGy64l9Yuuw&list=RDeGy64l9Yuuw&start_radio=1" target="_blank">John Legend</a>, Pentakill, Calvin Harris, Black Gryph0n and many others.
 
-As the primary developer of the content creation systems/SDK, I worked in a cross-functional agile team, providing technical mentorship, taking initiatives on system architectures, UX, workflow tools, performance optimizations, and ensuring high-quality delivery in a mission-critical production environment. Proud to highlight that our work has **leveraged the show production efficiency from 1/over a quarter to 2/week**!
+As the primary developer of the content creation systems/SDK, I worked in a cross-functional agile team, taking initiatives on system architectures, UX, workflow tools, performance optimizations, providing technical mentorship to non-tech teams and ensuring high-quality delivery in a mission-critical production environment. Proud to highlight that our work has **leveraged the show production efficiency from 1/over a quarter to 2/week**!
 
 My dual role as an SDK developer and Shows Tech Lead allowed me to close the loop from creation to production, treating our foundational systems as a product that must survive the pressure of a live environment.
 
