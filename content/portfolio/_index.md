@@ -9,9 +9,11 @@
 
 At <a href="https://wavexr.com/" target="_blank">Wave</a>, we've successfully built interactive, live VR music experience with performances by <a href="https://www.youtube.com/watch?v=UAhGvhvcoyY&list=RDUAhGvhvcoyY&start_radio=1" target="_blank">Justin Bieber</a>, <a href="https://www.youtube.com/watch?v=eGy64l9Yuuw&list=RDeGy64l9Yuuw&start_radio=1" target="_blank">John Legend</a>, Pentakill, Calvin Harris, Black Gryph0n and many others.
 
-As the primary developer of the content creation systems/SDK, I worked closely with a cross-functional agile team, providing technical mentorship to non-tech teams, taking initiatives on UX and performance optimizations, and ensuring high-quality delivery in a mission-critical production environment. Proud to highlight that our work has **leveraged the show production efficiency from 1/over a quarter to 2/week**!
+As the primary developer of the content creation systems/SDK, I worked in a cross-functional agile team, providing technical mentorship, taking initiatives on system architectures, UX, workflow tools, performance optimizations, and ensuring high-quality delivery in a mission-critical production environment. Proud to highlight that our work has **leveraged the show production efficiency from 1/over a quarter to 2/week**!
 
-I was involved end-to-end in the platform development, besides the above - I worked on networked multiplayer features, Unreal Engine editor extensions, multiple GUI tools, testing frameworks such as simulation bots and automation, and various workflow automation Python scripts used in show production.
+My dual role as an SDK developer and Shows Tech Lead allowed me to close the loop from creation to production, treating our foundational systems as a product that must survive the pressure of a live environment.
+
+My work covered the entire foundational stack, besides the above - I worked on networked multiplayer features, livestreaming components, Unreal Engine editor extensions, multiple GUI tools, testing frameworks such as simulation bots and automation, and various workflow Python-based automation tools used in show production.
 
 *Tech: C++, UE5 (engine source), Meta Quest 3, Android, Linux, Windows, Unreal Insights, RenderDoc, Grafana, Live Link, TouchOSC, Virtual Reality*
 
