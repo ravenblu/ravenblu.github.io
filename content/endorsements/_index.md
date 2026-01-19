@@ -27,5 +27,5 @@ Please check out the original recommendations on <a href="https://www.linkedin.c
 **Adam Arrigo - CEO at Wave**
 >Jiayu is an extremely hard worker and skilled developer. She exudes creativity in everything she does and is a pleasure to work with. If you're lucky enough to work with her, you would know there aren't many people out there with her level of dedication and commitment. Highly, highly recommended.
 
-**Mike Mcshaffry - Cloud/Server Architect**
+**Mike Mcshaffry - Cloud/Server Architect at Wave**
 >Jiayu and I worked in different groups, but her engineering and problem solving skills were well known to Wave's leadership. On the few occasions Jiayu and I worked directly together I found her to be genuine, communicative, clever and just fun to work with. If I was hiring a software engineer she'd definitely be on my list.
